@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+
+:root {
+    --MainBack: #121212;
+    --MainTextColour: #ffffff;
+
+    --NavBarText: #F69333;
+    --NavBarTextFade: #C3F9FFbb;
+}

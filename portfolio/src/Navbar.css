@@ -1,0 +1,31 @@
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    margin: 0 auto;
+    top: 1.5vh;
+    width: 50vw;
+    height: 7.5vh;
+}
+
+.NavOption {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .25s;
+
+    color: var(--MainTextColour);
+    text-shadow: 1px 0px 10px var(--MainTextColour);
+}
+
+#navbar:has(.NavOption:hover) > .NavOption {
+    color: var(--NavBarTextFade);
+    text-shadow: 1px 0px 10px var(--NavBarTextFade);
+}
+
+#navbar:has(.NavOption:hover) > .NavOption:hover {
+    color: var(--NavBarText);
+    text-shadow: 1px 0px 10px var(--NavBarText);
+}

@@ -1,0 +1,14 @@
+#Hero {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to bottom, #0f2027, #203a43); 
+    background: linear-gradient(to top, #0e1c22, #203a43);
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
