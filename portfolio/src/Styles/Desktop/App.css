@@ -1,0 +1,50 @@
+@media all and (min-width: 675px) {
+    .page {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #HeroContent {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        left: 10vw;
+    }
+    
+    #NameIntroText {
+        font-family: 'Roboto Mono', monospace;
+        color: var(--accent2);
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    
+    #NameText {
+        font-family: 'Segoe UI';
+        font-weight: '700';
+        font-size: 3.75rem;
+        color: var(--accent);
+    }
+    
+    #Subtext {
+        font-family: 'Segoe UI';
+        font-weight: '700';
+        font-size: 3.75rem;
+        color: rgba(119,200,238, 0.4);
+    }
+    
+    #IntroPara, #IntroPara > a{
+        color: var(--MainTextColour);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        max-width: clamp(200px, 40vw, 1000px);
+        font-size: 1.3rem;
+    }
+    
+    #IntroPara > a {
+        color: var(--accent2);
+        text-decoration: none;
+    }
+}
+

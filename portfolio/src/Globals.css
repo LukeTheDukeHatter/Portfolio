@@ -1,9 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
 
+/* CSS Reset */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; border: 0; font-family: 'Poppins', sans-serif; }
+html { height: 100%; }
+body { line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: hidden; background-color: var(--main-colour); }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+#root, #__next { isolation: isolate; }
+/* 
+main { width: 100vw; min-height: calc(100vh - var(--header-height) - var(--footer-height)); padding: 0 var(--content-padding); }
+main { display: flex; flex-direction: column; justify-content: flex-start; align-items: center; } 
+*/
+
+/* CSS Variables */
 :root {
-    --MainBack: #121212;
     --MainTextColour: #ffffff;
 
     --NavBarText: #F69333;
     --NavBarTextFade: #C3F9FFbb;
+
+    /* Realtime Colours */
+    --text: #ffffff;
+    --background: #0e1c22;
+    --primary: #10435b;
+    --secondary: #06212d;
+    --accent: #77c8ee;
+    --accent2: #F69333;
+}
+
+@media all and (min-width: 675px) {
+    :root {
+        --nav-width: min(75vw,1100px);
+        --nav-height: 7.5vh;
+    }
+}
+
+@media all and (max-width: 675px) {
+    :root {
+        --nav-width: 100vw;
+        --nav-height: 7.5vh;
+    }
 }

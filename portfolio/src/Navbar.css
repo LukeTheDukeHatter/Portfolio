@@ -1,11 +1,13 @@
 #navbar {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    position: relative;
-    margin: 0 auto;
+    position: absolute;
+    
     top: 1.5vh;
-    width: 50vw;
-    height: 7.5vh;
+    left: calc(50vw - calc(var(--nav-width) / 2));
+
+    width: var(--nav-width);
+    height: var(--nav-height);
 }
 
 .NavOption {
@@ -14,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
     transition-duration: .25s;
 
     color: var(--MainTextColour);
